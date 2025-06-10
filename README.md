@@ -2,13 +2,14 @@
 
 This repository will be used for courses 01KA438 and 0ADM126 offered in 2025.
 
-📁 **Organized**: The project structure is refereed to [datascience-template](https://github.com/icoxfog417/datascience-template).
+## Tutorial notebooks
 
-🚀 **Prepared**: Major libraries are prepared in `environment.yml`.
+- **day 3-1.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-3-1.ipynb)
 
-Here is the notebook link to provide the quick access to your analysis. You can create the conda environment by Right click `Build Conda Environment` or `conda env create -f environment.yml` in Studio Lab.
-
-[![Open in SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/haradatm/lecture-gssm2025/blob/main/README.md)
+- **day 3-1.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-3-2.ipynb)
+- **day 4-1.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-1.ipynb)
+- **day 4-2.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-2.ipynb)
+- **day 4-3.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-3.ipynb)
 
 ## Project Structure
 
@@ -20,14 +21,14 @@ Here is the notebook link to provide the quick access to your analysis. You can 
 │   ├── day-3-2.ipynb
 │   ├── day-4-1.ipynb
 │   ├── day-4-2.ipynb
-│   ├── day-5.ipynb
+│   ├── day-4-3.ipynb
 │   └── images
 ├── notebooks-samples               # stores notebook execution results in HTML
 │   ├── day-3-1.html
 │   ├── day-3-2.html
 │   ├── day-4-1.html
 │   ├── day-4-2.html
-│   ├── day-5.html
+│   ├── day-4-3.html
 │   └── images
 ├── scripts                         # store source code used in notebook
 │   ├── install_cabocha.sh
