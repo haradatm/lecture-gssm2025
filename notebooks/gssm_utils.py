@@ -18,13 +18,14 @@ from IPython.display import display
 
 # 乱数を固定する
 seed = 42
+os.environ['PYTHONHASHSEED'] = str(seed)
 random.seed(seed)
 np.random.seed(seed)
 
 # フォントパスを取得する
 # font_path='/Library/Fonts/Arial Unicode.ttf',
 # font_path = !find ${HOME} -name "ipaexg.ttf"
-font_path = [os.path.join(root, file) for root, dirs, files in os.walk("/home") for file in files if file == 'ipaexg.ttf']
+font_path = [os.path.join(root, file) for root, dirs, files in os.walk("/usr/local") for file in files if file == 'ipaexg.ttf']
 
 
 # ワードクラウドを描画する
