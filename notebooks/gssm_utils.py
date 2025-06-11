@@ -25,6 +25,7 @@ np.random.seed(seed)
 # フォントパスを取得する
 # font_path='/Library/Fonts/Arial Unicode.ttf',
 # font_path = !find ${HOME} -name "ipaexg.ttf"
+# font_path = [os.path.join(root, file) for root, dirs, files in os.walk("/home") for file in files if file == 'ipaexg.ttf']
 font_path = [os.path.join(root, file) for root, dirs, files in os.walk("/usr/local") for file in files if file == 'ipaexg.ttf']
 
 
@@ -107,9 +108,9 @@ def plot_cooccur_network(df, word_counts, cutoff, width=8, height=8, dep=False, 
     plt.axis("off")
     plt.show()
 
-    # PyVis プロットを出力する
-    if pyvis:
-        display(pyvis_plot)
+    # # PyVis プロットを出力する
+    # if pyvis:
+    #     display(pyvis_plot)
 
 # 指定したプロット位置(ax)に共起ネットワーク図を描画する
 def plot_cooccur_network_ax(ax, df, word_counts, cutoff, dep=False, pyvis=False, name="pyvis.html"):
@@ -356,7 +357,7 @@ def plot_attrs_network(df, attr_counts, word_counts, cutoff, width=8, height=8, 
         net.from_nx(G)
         net.show_buttons(filter_=['nodes', 'edges', 'physics'])
         pyvis_plot = net.show(f"{name}")
-        display(pyvis_plot)
+        # display(pyvis_plot)
 
 # 係り受けによる共起ネットワーク図を描画する (抽出語-抽出語用)
 def plot_dependency_network(df, word_counts, cutoff, width=8, height=8, pyvis=False, name="pyvis.html"):
