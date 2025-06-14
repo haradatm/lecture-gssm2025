@@ -4,11 +4,14 @@ This repository will be used for courses 01KA438 and 0ADM126 offered in 2025.
 
 ## Tutorial notebooks
 
-- **day 3-1.ipynb**: Text Analysis (1) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-3-1.ipynb)
-- **day 3-1.ipynb**: Text Analysis (2) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-3-2.ipynb)
-- **day 4-1.ipynb**: Text Analytics (1) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-1.ipynb)
-- **day 4-2.ipynb**: Text Analytics (2) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-2.ipynb)
-- **day 4-3.ipynb**: Text Analytics (3) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-3.ipynb)
+| Notebook | Description | Colab Link |
+|----------|-------------|------------|
+| **day 3-1.ipynb** | Text Analysis (1) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-3-1.ipynb)
+| **day 3-1.ipynb** | Text Analysis (2) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-3-2.ipynb)
+| **day 4-1.ipynb** | Text Analytics (1) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-1.ipynb)
+| **day 4-2.ipynb** | Text Analytics (2) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-2.ipynb)
+| **day 4-3.ipynb** | Text Analytics (3) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haradatm/lecture-gssm2025/blob/main/notebooks/day-4-3.ipynb)
+
 
 ## Project Structure
 
