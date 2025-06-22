@@ -25,7 +25,7 @@ np.random.seed(seed)
 # フォントパスを取得する
 # font_path='/Library/Fonts/Arial Unicode.ttf',
 # font_path = !find ${HOME} -name "ipaexg.ttf"
-# font_path = [os.path.join(root, file) for root, dirs, files in os.walk("/home") for file in files if file == 'ipaexg.ttf']
+# font_path = [os.path.join(root, file) for root, dirs, files in os.walk(".") for file in files if file == 'ipaexg.ttf']
 font_path = [os.path.join(root, file) for root, dirs, files in os.walk("/usr/local") for file in files if file == 'ipaexg.ttf']
 
 
@@ -132,7 +132,7 @@ def plot_cooccur_network_ax(ax, df, word_counts, cutoff, dep=False, pyvis=False,
     # 共起行列の要素ごとのループ (値がゼロの要素はスキップ)
     for i, j in zip(*Xc.nonzero()):
         # 対角行列でかつ値がしきい値を超えるものを保持する
-        if i < j and Xc[i,j] > cutoff:
+        if i != j and Xc[i,j] > cutoff:
             # ノード: 一方の単語とノードの大きさ(正規化した出現頻度)を保持する
             weights_w.append((words[i], {'title': words[i], 'size': word_counts[i] / count_max * 100}))
             # ノード: 他方の単語とノードの大きさ(正規化した出現頻度)を保持する
@@ -205,7 +205,7 @@ def plot_cooccur_network_with_code_ax(ax, df, word_counts, cutoff, coding_rule=N
     # 共起行列の要素ごとのループ (値がゼロの要素はスキップ)
     for i, j in zip(*Xc.nonzero()):
         # 対角行列でかつ値がしきい値を超えるものを保持する
-        if i < j and Xc[i,j] > cutoff:
+        if i != j and Xc[i,j] > cutoff:
             # ノード: 一方の単語とノードの大きさ(正規化した出現頻度)を保持する
             weights_w.append((words[i], {'title': words[i], 'size': word_counts[i] / count_max * 100}))
             # ノード: 他方の単語とノードの大きさ(正規化した出現頻度)を保持する
@@ -524,6 +524,7 @@ def plot_topic_distribution_ax(ax, topic_distribution):
     bars = ax.bar(x, topic_distribution)
     ax.set_xlabel('トピック')
     ax.set_ylabel('割合')
+    # ax.set_ylim(0, 0.5)
     ax.set_xticks(x, [f'#{i+1}' for i in range(n_topics)])
     ax.grid(True, linestyle='--', alpha=0.3)
 
