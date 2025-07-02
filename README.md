@@ -32,12 +32,13 @@ This repository will be used for courses 01KA438 and 0ADM126 offered in 2025.
 │   ├── install_cabocha.sh
 │   └── install_mecab.sh
 ├── slides                          # documentation for this lecture materials (To be uploaded after the lecture.)
-│   └── practice-1.pdf
-│   └── practice-2.pdf
-│   └── practice-3.pdf
-│   └── practice-4.pdf
+│   └── day-1.pdf
+│   └── day-2.pdf
+│   └── day-3.pdf
+│   └── day-4.pdf
 └── miscs                           # store miscellaneous resources
-    ├── practice-2_sample.xlsx
-    ├── practice-3_sample.xlsx
-    └── practice-4_sample.xlsx
+    ├── day-2_sample.xlsx
+    ├── day-3_sample.xlsx
+    ├── day-4_sample.xlsx
+    └── NotoSansJP-Medium.ttf       # This Font Software is licensed under the SIL Open Font License, Version 1.1 .
 ```
