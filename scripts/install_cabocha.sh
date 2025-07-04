@@ -19,8 +19,8 @@ FILE_ID="12G-tRUUT1rEJ9AYyOsF5K8e7x7joJJSo"
 gdown ${FILE_ID}
 tar zxvf CRF++-0.58.tar.gz
 cd CRF++-0.58
-wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
-wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
+# wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
+# wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
 chmod +x config.guess config.sub
 ./configure --prefix=${INSTALL_ROOT}
 make
@@ -35,8 +35,8 @@ FILE_ID="1S147wx67tPtSpGYafbIYUH_NjV1dzAdb"
 gdown ${FILE_ID}
 tar -xvf cabocha-0.69.tar.bz2
 cd cabocha-0.69
-wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
-wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
+# wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
+# wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
 chmod +x config.guess config.sub
 ./configure --prefix=${INSTALL_ROOT} --with-mecab-config=${MECAB_ROOT}/bin/mecab-config --with-charset=utf8 --enable-utf8-only
 make

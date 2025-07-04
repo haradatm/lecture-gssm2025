@@ -17,8 +17,8 @@ fi
 cd ${TOOLS}/src
 git clone https://github.com/taku910/mecab
 cd mecab/mecab
-wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
-wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
+# wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
+# wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
 chmod +x config.guess config.sub
 ./configure --with-charset=utf8 --prefix=${INSTALL_ROOT}
 make
@@ -28,8 +28,8 @@ make install
 ### Install MeCab IPADIC
 
 cd ${TOOLS}/src/mecab/mecab-ipadic
-wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
-wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
+# wget -O config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
+# wget -O config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
 chmod +x config.guess config.sub
 ./configure --with-charset=utf8 --prefix=${INSTALL_ROOT} --with-mecab-config=${INSTALL_ROOT}/bin/mecab-config
 make
