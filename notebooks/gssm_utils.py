@@ -155,7 +155,6 @@ def plot_cooccur_network_ax(ax, df, word_counts, cutoff, dep=False, pyvis=False,
 
     # ノードにサブグラフのグループを設定する
     for node in G:
-        G.nodes[node]['shape'] = 'circle'
         for i, c in enumerate(communities):
             if node in c:
                 G.nodes[node]['group'] = i
