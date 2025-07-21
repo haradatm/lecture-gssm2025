@@ -165,15 +165,15 @@ def plot_cooccur_network_ax(ax, df, word_counts, cutoff, dep=False, pyvis=False,
         G[u][v]['title'] = f"{G[u][v]['weight']/3:0.2f}"
 
     # プロット用にノートとエッジの重みをリストに変換する
-    nodelist_n = [node for node in G.nodes]
     weights_n = np.array(list(nx.get_node_attributes(G, 'size').values()))
     weights_e = np.array(list(nx.get_edge_attributes(G, 'weight').values()))
     color_map = np.array(list(nx.get_node_attributes(G, 'group').values()))
 
     # グラフの描画
     # pos = nx.spring_layout(G, k=0.3)
-    pos = graphviz_layout(G, prog='neato', args='-Goverlap="scalexy" -Gsep="+6" -Gnodesep=0.8 -Gsplines="polyline" -GpackMode="graph" -Gstart={}'.format(43))
-    nx.draw_networkx_nodes(G, pos, node_color=color_map, alpha=0.7, cmap=plt.cm.Set2, node_size=weights_n * 50, ax=ax, nodelist=nodelist_n)
+    # pos = graphviz_layout(G, prog='neato', args='-Goverlap="scalexy" -Gsep="+6" -Gnodesep=0.8 -Gsplines="polyline" -GpackMode="graph" -Gstart={}'.format(43))
+    pos = graphviz_layout(G, prog='neato', args='-Goverlap="scalexy" -Gsep="+6" -Gnodesep=0.8 -GpackMode="graph" -Gstart={}'.format(43))
+    nx.draw_networkx_nodes(G, pos, node_color=color_map, alpha=0.7, cmap=plt.cm.Set2, node_size=weights_n * 50, ax=ax)
     nx.draw_networkx_edges(G, pos, edge_color='gray', edge_cmap=plt.cm.Blues, alpha=0.7, width=weights_e, ax=ax)
     nx.draw_networkx_labels(G, pos, font_family='IPAexGothic', ax=ax)
     # ax.axis('off')
