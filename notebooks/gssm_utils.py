@@ -246,12 +246,14 @@ def plot_cooccur_network_with_code_ax(ax, df, word_counts, cutoff, coding_rule=N
     color_map_c = []
     for node in G:
         if node in coding_rule:
+            G.nodes[node]['shape'] = 'box'
             for i, c in enumerate(communities):
                 if node in c:
                     color_map_c.append(i)
     color_map_w = []
     for node in G:
         if node not in coding_rule:
+            G.nodes[node]['shape'] = 'circle'
             for i, c in enumerate(communities):
                 if node in c:
                     color_map_w.append(i)
