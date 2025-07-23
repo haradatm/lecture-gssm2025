@@ -322,12 +322,9 @@ def plot_attrs_network(df, attr_counts, word_counts, cutoff, width=8, height=8, 
     G.remove_nodes_from(list(nx.isolates(G)))
     # G = nx.minimum_spanning_tree(G)
 
-    # # 属性と単語を色分けする
-    # color_map = []
-    # for node in G:
-    #     if G.nodes[node]['type'] == 'word':
-    #         color_map.append(G.degree(node)+3)   # "+3"はカラーマップをシフトする調整値
+    # 属性と単語を色分けする
     for node in G:
+        G.nodes[node]['shape'] = 'circle'
         if G.nodes[node]['type'] == 'word':
             G.nodes[node]['group'] = G.degree(node)+3   # "+3"はカラーマップをシフトする調整値
 
